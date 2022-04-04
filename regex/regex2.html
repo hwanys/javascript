@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nobis o!
+      <br />
+      magnam amet voluptatem quod velit maxime aliquid quisquam error veniam,
+      ipsum dolorem asperiores id eum voluptate. Ipsum Aliquid beatae aut o!
+      quibusdam.
+    </p>
+    <script>
+      //원본 문자열 가져오기
+      let p1 = document.querySelector("p").innerHTML;
+
+      console.log("i 플래그");
+      console.log(p1.match(/Ipsum/i));
+      console.log("");
+      console.log("gi 플래그");
+      console.log(p1.match(/Ipsum/gi));
+      console.log("");
+      console.log("gm 플래그");
+      console.log(p1.match(/o!$/gm)); // 문단이 나눠져 있는 상황에서 o!로 끝나는 문자 찾기
+    </script>
+  </body>
+</html>
